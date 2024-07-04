@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  font-size: 1.25rem;
+  line-height: 150%;
+  font-weight: 500;
+  background-color: oklch(20 0.05 240);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+header {
+  background-color: #fff;
+}
+
+nav {
+  display: grid;
+  font-size: 1rem;
+  max-height: 6.25rem;
+  padding-inline: 1.875rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 100px;
+}
+
+main {
+  background-color: #000;
+}
+
+footer {
+  background-color: #000;
+}
+
+.container {
+  margin-inline: auto;
+}
+
+.nav {
+  &__left-content {
+    display: grid;
+    align-items: center;
+    white-space: nowrap;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+    &--logo {
+      > img {
+        width: 2.375rem;
+        height: 3.5625rem;
+        margin: auto;
+      }
+    }
+
+    &--discover-music {
+    }
+  }
+  &__right-content {
+    display: grid;
+  }
+}
