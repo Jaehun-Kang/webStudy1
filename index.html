@@ -4,72 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Qrates</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/icon type">
     <link rel="stylesheet" href="./style/style.css" />
+    <script defer src="./script/navFolder.js"></script>
+    <script defer src="./script/navSearch.js"></script>
   </head>
   <body>
     <header>
-      <nav>
-        <div class="container nav__left-content">
-          <div class="nav__left-content--logo">
-            <img src="./assets/qrates-logo.svg" alt="Qrates logo" />
+      <div id="search-page">
+        <div class="close-button">×</div>
+        <div class="search-tab">
+          <div class="search-tab__search-bar">
+            <div class="mglass">
+              <img src="./assets/search.svg" alt="">
+            </div>
+            <input type="text" class="search-input" placeholder="Search by artist, keyword or genre">
           </div>
-          <div class="nav__left-content--discover-music">DISCOVER MUSIC</div>
-          <div class="nav__left-content--for-artists">FOR ARTISTS</div>
-          <div class="nav__left-content--for-fans">FOR FANS</div>
-          <div class="nav__left-content--search"></div>
-          <div class="nav__left-content--shop"></div>
+          <div class="search-tab__popular">
+            <div class="search-tab__popular--title">Popular searches</div>
+            <div class="search-tab__popular--categories">
+              <div class="search-tab__popular--categories--category vulfpeck">VULFPECK</div>
+              <div class="search-tab__popular--categories--category chill">CHILL</div>
+              <div class="search-tab__popular--categories--category hiphop">HIPHOP</div>
+              <div class="search-tab__popular--categories--category electronic">ELECTRONIC</div>
+              <div class="search-tab__popular--categories--category indie">INDIE</div>
+              <div class="search-tab__popular--categories--category funk">FUNK</div>
+              <div class="search-tab__popular--categories--category rnb">R&B</div>
+              <div class="search-tab__popular--categories--category rock">ROCK</div>
+            </div>
+          </div>
         </div>
-        <div class="container nav__right-content">
-          <div class="nav__right-content--log-in">LOG IN</div>
-          <div class="nav__right-content--make-your-own">MAKE YOUR OWN</div>
+        
+
+      </div>
+      <div id="main-page">
+        <nav>
+          <div class="container nav__left-content">
+            <a class="nav__left-content--logo" href="https://qrates.com/">
+              <img src="./assets/qrates-logo.svg" alt="Qrates logo" />
+            </a>
+            <div class="nav__left-content--pages">
+              <div class="nav__left-content--pages--discover-music">
+                <div class="nav__left-content--pages--discover-music--folder">
+                  <div>DISCOVER MUSIC</div>
+                  <img class="nav-arrow" src="./assets/nav-arrow-down.svg">
+                </div>
+                <div id="nav-items" class="nav__left-content--pages--discover-music--items">
+                  <div><a href="https://qrates.com/projects?product_format=vinyl">Records</a></div>
+                  <div><a href="https://qrates.com/projects?product_format=cassette">Cassettes</a></div>
+                  <div><a href="https://qrates.com/stories">Stories</a></div>
+                  <div><a href="https://qrates.com/curated">Qrates Curated</a></div>
+                </div>
+              </div>
+              <a class="nav__left-content--pages--for-artists" href="./index.html">FOR ARTISTS</a>
+              <a class="nav__left-content--pages--for-fans" href="https://qrates.com/for-fans">FOR FANS</a>
+              <div class="nav__left-content--pages--search">
+                <img src="./assets/search.svg" alt="search">
+              </div>
+              <a class="nav__left-content--pages--shop" href="https://qrates.com/cart">
+                <img src="./assets/cart.svg" alt="shopping cart">
+              </a>
+            </div>
+          </div>
+          <div></div>
+          <div class="container nav__right-content">
+            <a class="nav__right-content--log-in" href="https://qrates.com/signin">LOG IN</a>
+            <div class="nav__right-content--make-your-own">MAKE YOUR OWN</div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="section">
+          <div class="container main-content__intro"></div>
         </div>
-      </nav>
-    </header>
-    <main>
-      <div class="section">
-        <div class="container main-content__intro"></div>
-      </div>
-      <div class="section">
-        <div class="container main-content__desc1">
-          <div class="main-content__desc1--title"></div>
-          <div class="main-content__desc1--details"></div>
+        <div class="section">
+          <div class="container main-content__desc1">
+            <div class="main-content__desc1--title"></div>
+            <div class="main-content__desc1--details"></div>
+          </div>
         </div>
-      </div>
-      <div class="section">
-        <div class="container main-content__desc2">
-          <div class="main-content__desc2--phrase"></div>
-          <div class="main-content__desc2--0"></div>
-          <div class="main-content__desc2--1"></div>
-          <div class="main-content__desc2--2"></div>
-          <div class="main-content__desc2--3"></div>
-          <div class="main-content__desc2--4"></div>
-          <div class="main-content__desc2--5"></div>
-          <div class="main-content__desc2--6"></div>
-          <div class="main-content__desc2--7"></div>
-          <div class="main-content__desc2--closing"></div>
+        <div class="section">
+          <div class="container main-content__desc2">
+            <div class="main-content__desc2--phrase"></div>
+            <div class="main-content__desc2--0"></div>
+            <div class="main-content__desc2--1"></div>
+            <div class="main-content__desc2--2"></div>
+            <div class="main-content__desc2--3"></div>
+            <div class="main-content__desc2--4"></div>
+            <div class="main-content__desc2--5"></div>
+            <div class="main-content__desc2--6"></div>
+            <div class="main-content__desc2--7"></div>
+            <div class="main-content__desc2--closing"></div>
+          </div>
         </div>
-      </div>
-      <div class="section">
-        <div class="container main-content__desc3"></div>
-      </div>
-      <div class="section">
-        <div class="container main-content__desc4"></div>
-      </div>
-      <div class="section">
-        <!-- 1,2로 나눠진 페이지 -->
-        <div class="container main-content__desc5"></div>
-      </div>
-      <div class="section">
-        <div class="container main-content__desc6"></div>
-      </div>
-    </main>
-    <footer>
-      <div class="section">
-        <div class="container footer-content">
-          <div class="footer-content__pages"></div>
-          <div class="footer-content__bottom"></div>
+        <div class="section">
+          <div class="container main-content__desc3"></div>
         </div>
+        <div class="section">
+          <div class="container main-content__desc4"></div>
+        </div>
+        <div class="section">
+          <!-- 1,2로 나눠진 페이지 -->
+          <div class="container main-content__desc5"></div>
+        </div>
+        <div class="section">
+          <div class="container main-content__desc6"></div>
+        </div>
+      </main>
+      <footer>
+        <div class="section">
+          <div class="container footer-content">
+            <div class="footer-content__pages"></div>
+            <div class="footer-content__bottom"></div>
+          </div>
+        </div>
+      </footer>
       </div>
-    </footer>
   </body>
 </html>
