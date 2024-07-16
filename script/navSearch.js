@@ -13,11 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     searchButton.addEventListener('click', () => {
         document.getElementById('main-page').style.display = 'none';
+        document.getElementById('main').style.display = 'none';
+        document.getElementById('footer').style.display = 'none';
         document.getElementById('search-page').style.display = 'grid';
     });
 
     closeButton.addEventListener('click', () => {
         document.getElementById('main-page').style.display = 'block';
+        document.getElementById('main').style.display = 'block';
+        document.getElementById('footer').style.display = 'block';
         document.getElementById('search-page').style.display = 'none';
     });
 
