@@ -24,11 +24,11 @@ body {
   line-height: 150%;
   font-weight: 600;
   background-color: oklch(20 0.05 240);
-  // background-color: #000;
 }
 
 img {
   display: block;
+  user-select: none;
 }
 
 a {
@@ -716,7 +716,7 @@ footer {
     background-color: #fff;
     padding: 5rem 1.875rem;
     text-align: center;
-    
+    border-top: .125rem #000 solid;
 
     &--label {
       margin-inline: auto;
@@ -758,6 +758,7 @@ footer {
   &__desc5 {
     border-top: 2px #000 solid;
     transition: all 500ms;
+    display: grid;
 
     &--1 {
       background-color: oklch(95.36% 0.2 107.63);
@@ -767,6 +768,8 @@ footer {
     }
 
     &--1, &--2 {
+      grid-column: 1;
+      grid-row: 1;
       width: 100%;
       transition: opacity 500ms;
       padding: 3.125rem;
@@ -884,7 +887,47 @@ footer {
         margin-inline: auto;
         letter-spacing: -0.27px;
       }
-      &--animation {}
+      &--animation {
+        position: relative;
+        max-width: 21.875rem;
+        margin-bottom: 5rem;
+        margin-inline: auto;
+        display: grid;
+        
+        &--1, &--2 {
+          grid-column: 1;
+          grid-row: 1;
+          display: grid;
+
+          .visible {
+            visibility: visible;
+          }
+          
+          &--1, &--2, &--3, &--4, &--5, &--6 {
+            grid-column: 1;
+            grid-row: 1;
+            width: 100%;
+            height: auto;
+            visibility: hidden;
+
+          }
+
+          &--sparkle {
+            position: absolute;
+            right: 140%;
+            width: 35%;
+            visibility: hidden;
+          }
+
+          &--dollar {
+            position: absolute;
+            top: -30%;
+            left: 140%;
+            width: 28%;
+            visibility: hidden;
+          }
+        }
+      }
       &--button {
         background-color: oklch(95.36% 0.2 107.63);
         color: #000;
@@ -896,6 +939,125 @@ footer {
         padding-inline: 1.5625rem;
         border-radius: 6.1875rem;
         line-height: 3.125rem;
+      }
+    }
+  }
+}
+
+.footer-content {
+  padding: 4.875rem 3.75rem 5.25rem 5rem;
+  color: #fff;
+  background-color: #000;
+
+  &__pages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    &--1, &--2, &--3, &--4 {
+
+      &--title {
+        font-size: 1.25rem;
+        line-height: 1rem;
+        margin-bottom: 1.5rem;
+        white-space: nowrap;
+      }
+
+      &--links {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        font-family: 'Qratesis-medium', 'Noto Sans KR', sans-serif;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 292px;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+
+    &--right {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content min-content min-content;
+      justify-content: end;
+
+      &--language {
+        justify-self: end;
+        height: 50px;
+        margin-bottom: .9375rem;
+        position: relative;
+        
+        .rotate {
+          transform: rotate(-0.5turn);
+        }
+        img {
+          transition: 300ms;
+        }
+
+        &--selected, &--unselected {
+          background-color: #000;
+          cursor: pointer;
+          width: 9.6875rem;
+          height: 3.125rem;
+          border: .125rem #fff solid;
+          justify-self: end;
+          font-family: 'Qratesis-medium', 'Noto Sans KR', sans-serif;
+          font-weight: 500;
+          line-height: 46px;
+          padding-inline: 1.25rem;
+        }
+
+        &--selected {
+          display: grid;
+          grid-template-columns: min-content 1fr min-content;
+          align-items: center;
+
+          &--arrow {
+            justify-self: end;
+          }
+        }
+
+        &--unselected {
+          position: absolute;
+          border-top: 0;
+          display: none;
+
+          &:hover {
+            background-color: oklch(44.68% 0.005 78.27);
+          }
+        }
+      }
+
+      &--logos {
+        display: grid;
+        grid-template-columns: 1fr min-content min-content min-content;
+        column-gap: .5rem;
+        margin-bottom: 1.25rem;
+
+        & > * {
+          width: 2.25rem;
+        }
+      }
+
+      &--legal {
+        font-size: .875rem;
+        line-height: 1.125rem;
+        display: grid;
+        grid-template-columns: min-content min-content;
+        white-space: nowrap;
+
+        &--left {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          & > * {
+            margin-left: 1.25rem;
+          }
+        }
+
+        &--right {
+          margin-left: 2.5rem;
+        }
       }
     }
   }
