@@ -4,42 +4,133 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Qrates</title>
-    <link rel="icon" href="./assets/favicon.ico" type="image/icon type">
+    <link rel="icon" href="./assets/favicon.ico" type="image/icon type" />
     <link rel="stylesheet" href="./style/style.css" />
     <script defer src="./script/navFolder.js"></script>
+    <script defer src="./script/navFolder990.js"></script>
     <script defer src="./script/navSearch.js"></script>
     <script defer src="./script/desc5.js"></script>
     <script defer src="./script/animation.js"></script>
     <script defer src="./script/langFolder.js"></script>
+    <script defer src="./script/navMenu.js"></script>
   </head>
   <body>
     <header>
+      <div id="menu-page">
+        <div class="section">
+          <div class="menu">
+            <div class="menu__links">
+              <div class="menu__links--folder">
+                <div class="menu__links--folder--opener">
+                  <div class="menu__links--folder--opener--text">
+                    DISCOVER MUSIC
+                  </div>
+                  <div class="menu__links--folder--opener--arrow nav-arrow1">
+                    <img src="./assets/nav-arrow-down.svg" alt="" />
+                  </div>
+                </div>
+                <div id="nav-items1" class="menu__links--folder--items">
+                  <a
+                    class="menu__links--folder--items--item"
+                    href="https://qrates.com/projects?product_format=vinyl"
+                    >Records</a
+                  >
+                  <a
+                    class="menu__links--folder--items--item"
+                    href="https://qrates.com/projects?product_format=cassette"
+                    >Cassettes</a
+                  >
+                  <a
+                    class="menu__links--folder--items--item"
+                    href="https://qrates.com/stories"
+                    >Stories</a
+                  >
+                  <a
+                    class="menu__links--folder--items--item"
+                    href="https://qrates.com/curated"
+                    >Qrates Curated</a
+                  >
+                </div>
+              </div>
+              <a class="menu__links--for-artists" href="./index.html"
+                >FOR ARITSTS</a
+              >
+              <a
+                class="menu__links--for-fans"
+                href="https://qrates.com/for-fans"
+                >FOR FANS</a
+              >
+            </div>
+            <div class="menu__sns">
+              <a href="" class="menu__sns--facebook">
+                <img src="./assets/facebook_black.svg" alt="" />
+              </a>
+              <a href="" class="menu__sns--instagram">
+                <img src="./assets/instagram_black.svg" alt="" />
+              </a>
+              <a href="" class="menu__sns--twitter">
+                <img src="./assets/twitter_black.svg" alt="" />
+              </a>
+            </div>
+            <div class="menu__buttons">
+              <a
+                class="menu__buttons--make"
+                href="https://qrates.com/projects/start"
+                >MAKE A RECORD</a
+              >
+              <a class="menu__buttons--log-in" href="https://qrates.com/signin"
+                >LOG IN</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="search-page">
         <div class="close-button">×</div>
         <div class="search-tab">
           <div class="search-tab__search-bar">
             <div class="mglass">
-              <img src="./assets/search.svg" alt="">
+              <img src="./assets/search.svg" alt="" />
             </div>
-            <input type="text" class="search-input" placeholder="Search by artist, keyword or genre">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search by artist, keyword or genre"
+            />
           </div>
           <div class="search-tab__popular">
             <div class="search-tab__popular--title">Popular searches</div>
             <div class="search-tab__popular--categories">
-              <div class="search-tab__popular--categories--category vulfpeck">VULFPECK</div>
-              <div class="search-tab__popular--categories--category chill">CHILL</div>
-              <div class="search-tab__popular--categories--category hiphop">HIPHOP</div>
-              <div class="search-tab__popular--categories--category electronic">ELECTRONIC</div>
-              <div class="search-tab__popular--categories--category indie">INDIE</div>
-              <div class="search-tab__popular--categories--category funk">FUNK</div>
-              <div class="search-tab__popular--categories--category rnb">R&B</div>
-              <div class="search-tab__popular--categories--category rock">ROCK</div>
+              <div class="search-tab__popular--categories--category vulfpeck">
+                VULFPECK
+              </div>
+              <div class="search-tab__popular--categories--category chill">
+                CHILL
+              </div>
+              <div class="search-tab__popular--categories--category hiphop">
+                HIPHOP
+              </div>
+              <div class="search-tab__popular--categories--category electronic">
+                ELECTRONIC
+              </div>
+              <div class="search-tab__popular--categories--category indie">
+                INDIE
+              </div>
+              <div class="search-tab__popular--categories--category funk">
+                FUNK
+              </div>
+              <div class="search-tab__popular--categories--category rnb">
+                R&B
+              </div>
+              <div class="search-tab__popular--categories--category rock">
+                ROCK
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div id="main-page">
-        <nav>
+        <nav id="nav">
           <div class="container nav__left-content">
             <a class="nav__left-content--logo" href="https://qrates.com/">
               <img src="./assets/qrates-logo.svg" alt="Qrates logo" />
@@ -48,435 +139,1241 @@
               <div class="nav__left-content--pages--discover-music">
                 <div class="nav__left-content--pages--discover-music--folder">
                   <div>DISCOVER MUSIC</div>
-                  <img class="nav-arrow" src="./assets/nav-arrow-down.svg">
+                  <img class="nav-arrow" src="./assets/nav-arrow-down.svg" />
                 </div>
-                <div id="nav-items" class="nav__left-content--pages--discover-music--items">
-                  <div><a href="https://qrates.com/projects?product_format=vinyl">Records</a></div>
-                  <div><a href="https://qrates.com/projects?product_format=cassette">Cassettes</a></div>
+                <div
+                  id="nav-items"
+                  class="nav__left-content--pages--discover-music--items"
+                >
+                  <div>
+                    <a href="https://qrates.com/projects?product_format=vinyl"
+                      >Records</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="https://qrates.com/projects?product_format=cassette"
+                      >Cassettes</a
+                    >
+                  </div>
                   <div><a href="https://qrates.com/stories">Stories</a></div>
-                  <div><a href="https://qrates.com/curated">Qrates Curated</a></div>
+                  <div>
+                    <a href="https://qrates.com/curated">Qrates Curated</a>
+                  </div>
                 </div>
               </div>
-              <a class="nav__left-content--pages--for-artists" href="./index.html">FOR ARTISTS</a>
-              <a class="nav__left-content--pages--for-fans" href="https://qrates.com/for-fans">FOR FANS</a>
+              <a
+                class="nav__left-content--pages--for-artists"
+                href="./index.html"
+                >FOR ARTISTS</a
+              >
+              <a
+                class="nav__left-content--pages--for-fans"
+                href="https://qrates.com/for-fans"
+                >FOR FANS</a
+              >
               <div class="nav__left-content--pages--search">
-                <img src="./assets/search.svg" alt="search">
+                <img src="./assets/search.svg" alt="search" />
               </div>
-              <a class="nav__left-content--pages--shop" href="https://qrates.com/cart">
-                <img src="./assets/cart.svg" alt="shopping cart">
+              <a
+                class="nav__left-content--pages--shop"
+                href="https://qrates.com/cart"
+              >
+                <img src="./assets/cart.svg" alt="shopping cart" />
               </a>
+              <img
+                class="nav__left-content--pages--menu"
+                src="./assets/menu.svg"
+                alt=""
+              />
             </div>
           </div>
           <div></div>
           <div class="container nav__right-content">
-            <a class="nav__right-content--log-in" href="https://qrates.com/signin">LOG IN</a>
+            <a
+              class="nav__right-content--log-in"
+              href="https://qrates.com/signin"
+              >LOG IN</a
+            >
             <div class="nav__right-content--make-your-own">MAKE YOUR OWN</div>
           </div>
         </nav>
       </div>
-      </header>
-      <main id="main">
-        <div class="section">
-          <div class="container main-content__intro">
-            <div>
-              <div class="main-content__intro--text">
-                <div class="main-content__intro--text--label">FOR ARTISTS</div>
-                <div class="main-content__intro--text--title">Music in your hands. Without the barriers.</div>
-                <div class="main-content__intro--text--desc">Full-service production, a global retail network, customer support - and you keep up to 85% of profits. ↓</div>
+    </header>
+    <main id="main">
+      <div class="section">
+        <div class="container main-content__intro">
+          <div class="main-content__intro--text">
+            <div class="main-content__intro--text--label label">
+              FOR ARTISTS
+            </div>
+            <div class="main-content__intro--text--title">
+              Music in your hands. Without the barriers.
+            </div>
+            <div class="main-content__intro--text--desc">
+              Full-service production, a global retail network, customer support
+              - and you keep up to 85% of profits. ↓
+            </div>
+          </div>
+          <div class="main-content__intro--img1">
+            <img src="./assets/top_section_image_1.png" alt="" />
+          </div>
+          <div class="main-content__intro--img2">
+            <img src="./assets/top_section_image_2.png" alt="" />
+          </div>
+          <div class="main-content__intro--img3">
+            <img src="./assets/paid.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container main-content__desc1">
+          <div class="main-content__desc1--title">
+            Choose from two formats with promised quality
+          </div>
+          <div class="main-content__desc1--details">
+            <div class="main-content__desc1--details-1">
+              <div class="main-content__desc1--details-1--title">Vinyl</div>
+              <div class="main-content__desc1--details-1--detail">
+                We know how special pressed records are to you. Our products are
+                built for fans, by fans. We make it easy for artists to press
+                vinyl, so the music you love can keep reaching ears in the most
+                beautiful way.
               </div>
+              <img src="./assets/recordVinyl.png" alt="" />
             </div>
-            <div class="main-content__intro--img1">
-              <img src="./assets/top_section_image_1.png" alt="">
-            </div>
-            <div class="main-content__intro--img2">
-              <img src="./assets/top_section_image_2.png" alt="">
-            </div>
-            <div class="main-content__intro--img3">
-              <img src="./assets/paid.svg" alt="">
+            <div class="main-content__desc1--details-2">
+              <div class="main-content__desc1--details-2--title">Cassette</div>
+              <div class="main-content__desc1--details-2--detail">
+                Cassettes have always been special to music fans and artists.
+                Whether you are saving a recording of a great concert, or
+                preserving an early demo, there's no better way to keep that
+                music close than on cassette tapes.
+              </div>
+              <img src="./assets/cassette.png" alt="" />
             </div>
           </div>
         </div>
-        <div class="section">
-          <div class="container main-content__desc1">
-            <div class="main-content__desc1--title">Choose from two formats with promised quality</div>
-            <div class="main-content__desc1--details">
-              <div class="main-content__desc1--details-1">
-                <div class="main-content__desc1--details-1--title">Vinyl</div>
-                <div class="main-content__desc1--details-1--detail">
-                  We know how special pressed records are to you. Our products are built for fans, by fans. We make it easy for artists to press vinyl, so the music you love can keep reaching ears in the most beautiful way.</div>
-                <img src="./assets/recordVinyl.png" alt="">
-              </div>
-              <div class="main-content__desc1--details-2">
-                <div class="main-content__desc1--details-2--title">Cassette</div>
-                <div class="main-content__desc1--details-2--detail">
-                  Cassettes have always been special to music fans and artists. Whether you are saving a recording of a great concert, or preserving an early demo, there's no better way to keep that music close than on cassette tapes.</div>
-                  <img src="./assets/cassette.png" alt="">
+      </div>
+      <div class="section">
+        <div class="container main-content__desc2">
+          <div class="main-content__desc2--phrase">
+            You make music.<br class="main-content__desc2--phrase--br" />
+            We do the rest.
+          </div>
+          <div class="main-content__desc2--0 web">
+            <div class="main-content__desc2--0--grey">
+              <div class="main-content__desc2--0--grey--label label">YOU</div>
+              <div class="main-content__desc2--0--grey--text">
+                <div class="main-content__desc2--0--grey--text--title">
+                  Focus on making music
                 </div>
+                <div class="main-content__desc2--0--grey--text--desc">
+                  You can focus on your music production with peace of mind: the
+                  Artist Toolkit has lots of information about music production,
+                  knowledge about vinyl records and cassettes, and tips on how
+                  to sell your music. Artist Toolkit
+                </div>
+              </div>
+            </div>
+            <div class="main-content__desc2--0--yellow">
+              <div class="main-content__desc2--0--yellow--label label">
+                QRATES
+              </div>
+              <div class="main-content__desc2--0--yellow--text">
+                <div class="main-content__desc2--0--yellow--text--title">
+                  We'll take care of the hassle
+                </div>
+                <div class="main-content__desc2--0--yellow--text--desc">
+                  Qrates supports a wide range of artists while eliminating the
+                  hassles, costs and risks associated with pressing records,
+                  giving artists more time and income back in their hands.
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="section">
-          <div class="container main-content__desc2">
-            <div class="main-content__desc2--phrase">You make music. We do the rest.</div>
+          <div class="main-content__desc2--1 web">
+            <div class="main-content__desc2--1--grey">
+              <div class="main-content__desc2--1--grey--title">
+                Express your work on Qrates
+              </div>
+              <div class="main-content__desc2--1--grey--subtitle">
+                Qrates studio
+              </div>
+              <div class="main-content__desc2--1--grey--desc">
+                Your product details should match the details of your music.
+                Tweak and customize your vinyl, sleeve, jacket, and more.
+              </div>
+            </div>
+            <div class="main-content__desc2--1--middle">
+              <div class="main-content__desc2--1--middle--circle">1</div>
+              <div class="main-content__desc2--1--middle--line"></div>
+              <div class="main-content__desc2--1--middle--arrowhead"></div>
+            </div>
+            <div class="main-content__desc2--1--yellow">
+              <div class="main-content__desc2--1--grey--title">
+                Over 120,000 customization possibilities <br />3D Visualizer
+              </div>
+              <div class="main-content__desc2--1--grey--desc">
+                Choose from vinyl or cassette, each with a wide range of options
+                including colors, packaging, obi strips, download cards, etc.
+                There are over 120,000 variations of colors and specs for vinyl
+                and cassette that can be customized in the Qrates Studio.
+              </div>
+              <img
+                class="main-content__desc2--1--grey--img"
+                src="./assets/recordQrates.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="main-content__desc2--2 web">
+            <div class="main-content__desc2--2--grey">
+              <div class="main-content__desc2--2--grey--title">
+                Start a Qrates page,
+              </div>
+              <div class="main-content__desc2--2--grey--title">
+                confirm and pay for production costs.<br />Pay up front?
+                Crowdfunding?
+              </div>
+              <div class="main-content__desc2--2--grey--desc">
+                Pay for the production of your product in advance and start
+                production immediately, or choose the crowdfunding option and
+                press as many copies you like with pledges you collect from your
+                fans.
+              </div>
+              <div class="main-content__desc2--2--grey--subtitle">
+                Qrates page and Artist page
+              </div>
+              <div class="main-content__desc2--2--grey--desc">
+                The Qrates page is your storefront on Qrates to sell your music.
+                The Artist page is your profile page. Upload your images to the
+                template provided and fill in the form to set it up.
+              </div>
+              <img
+                class="main-content__desc2--2--grey--img"
+                src="./assets/managingRecord.png"
+                alt=""
+              />
+            </div>
+            <div class="main-content__desc2--2--middle">
+              <div class="main-content__desc2--2--middle--circle">2</div>
+              <div class="main-content__desc2--2--middle--line"></div>
+              <div class="main-content__desc2--2--middle--arrowhead"></div>
+            </div>
+            <div class="main-content__desc2--2--yellow">
+              <div class="main-content__desc2--2--yellow--title">
+                We support a wide range of artists' needs
+              </div>
+              <div class="main-content__desc2--2--yellow--subtitle">
+                Small production minimums
+              </div>
+              <div class="main-content__desc2--2--yellow--desc">
+                Vinyl records can be made from 100 copies, and cassette tapes
+                from 50 copies.
+              </div>
+              <div class="main-content__desc2--2--yellow--subtitle">
+                Select the payment option
+              </div>
+              <div class="main-content__desc2--2--yellow--desc">
+                You can pay for the production of your product in advance and
+                begin the production process immediately. We also have a
+                pre-order function, which allows you to take orders during
+                production until completion, and the crowdfunding method, which
+                allows you to collect orders in advance and then begin the
+                manufacturing process. If you don't want to pay for the
+                production costs upfront, or if you want to collect orders from
+                your fans before deciding on the final number of pieces to be
+                produced, try crowdfunding. No risk, no waste.
+              </div>
+              <div class="main-content__desc2--2--yellow--subtitle">
+                Easily customizable your Qrates page and artist page
+              </div>
+              <div class="main-content__desc2--2--yellow--desc">
+                Qrates provides easy-to-setup templates for the Qrates page and
+                the artist profile page. The Qrates page for selling your music
+                can be set up to include audio samples, embedded videos, and
+                comments from fans, making it a great promotional tool.
+              </div>
+            </div>
+          </div>
+          <div class="main-content__desc2--3 web">
+            <div class="main-content__desc2--3--grey">
+              <div class="main-content__desc2--3--grey--title">
+                Collect orders from fans
+              </div>
+              <div class="main-content__desc2--3--grey--desc">
+                Share your Qrates page and collect orders from your fans. A
+                variety of tools are also available to promote your music.
+              </div>
+            </div>
+            <div class="main-content__desc2--3--middle">
+              <div class="main-content__desc2--3--middle--circle">3</div>
+              <div class="main-content__desc2--3--middle--line"></div>
+              <div class="main-content__desc2--3--middle--arrowhead"></div>
+            </div>
+            <div class="main-content__desc2--3--yellow">
+              <div class="main-content__desc2--3--yellow--title">
+                Wholesale distribution network
+              </div>
+              <div class="main-content__desc2--3--yellow--subtitle">
+                You can sell wholesale directly to record stores worldwide
+              </div>
+              <div class="main-content__desc2--3--yellow--desc">
+                Simply start selling on your Qrates page and receive orders from
+                over 150 record stores and distributors worldwide that we
+                partner with.
+              </div>
+              <img
+                class="main-content__desc2--3--yellow--img"
+                src="./assets/logos.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="main-content__desc2--4 web">
+            <div class="main-content__desc2--4--grey">
+              <div class="main-content__desc2--4--grey--title">
+                Upload your product assets and start production
+              </div>
+              <div class="main-content__desc2--4--grey--desc">
+                Prepare your audio and print files required for production.
+              </div>
+            </div>
+            <div class="main-content__desc2--4--middle">
+              <div class="main-content__desc2--4--middle--circle">4</div>
+              <div class="main-content__desc2--4--middle--line"></div>
+              <div class="main-content__desc2--4--middle--arrowhead"></div>
+            </div>
+            <div class="main-content__desc2--4--yellow">
+              <div class="main-content__desc2--4--yellow--title">
+                Professional audio mastering and artwork support.
+              </div>
+              <div class="main-content__desc2--4--yellow--subtitle">
+                Audio mastering service
+              </div>
+              <div class="main-content__desc2--4--yellow--desc">
+                Qrates offers a audio mastering service with a partner
+                professional audio engineer to support optimal sound creation.
+              </div>
+              <div class="main-content__desc2--4--yellow--subtitle">
+                Artwork support
+              </div>
+              <div class="main-content__desc2--4--yellow--desc">
+                We help ensure that your artwork conforms to printing standards
+                and that your product is as beautiful as possible.
+              </div>
+            </div>
+          </div>
+          <div class="main-content__desc2--5 web">
+            <div class="main-content__desc2--5--grey">
+              <img
+                class="main-content__desc2--5--grey--img"
+                src="./assets/standingRecord.png"
+                alt=""
+              />
+            </div>
+            <div class="main-content__desc2--5--middle">
+              <div class="main-content__desc2--5--middle--circle">5</div>
+              <div class="main-content__desc2--5--middle--line"></div>
+              <div class="main-content__desc2--5--middle--arrowhead"></div>
+            </div>
+            <div class="main-content__desc2--5--yellow">
+              <div class="main-content__desc2--5--yellow--title">
+                Pressing records and making cassette tapes
+              </div>
+              <div class="main-content__desc2--5--yellow--subtitle">
+                Trusted production partners
+              </div>
+              <div class="main-content__desc2--5--yellow--desc">
+                We partner with factories that have a long history of
+                manufacturing vinyl records and cassette tapes with proven
+                technical capabilities and produce world-class quality products.
+              </div>
+              <div class="main-content__desc2--5--yellow--subtitle">
+                Speedy delivery time
+              </div>
+              <div class="main-content__desc2--5--yellow--desc">
+                Vinyl records are shipped from our factory within an average of
+                16 weeks after ordering. Cassette tapes can be shipped from the
+                factory in an average of 8 weeks or less.
+              </div>
+              <a
+                class="main-content__desc2--5--yellow--link"
+                href="https://qrates.com/"
+                >LEARN MORE</a
+              >
+            </div>
+          </div>
+          <div class="main-content__desc2--6 web">
+            <div class="main-content__desc2--6--grey"></div>
+            <div class="main-content__desc2--6--middle">
+              <div class="main-content__desc2--6--middle--circle">6</div>
+              <div class="main-content__desc2--6--middle--line"></div>
+              <div class="main-content__desc2--6--middle--arrowhead"></div>
+            </div>
+            <div class="main-content__desc2--6--yellow">
+              <div class="main-content__desc2--6--yellow--title">
+                Warehousing and Distribution
+              </div>
+              <div class="main-content__desc2--6--yellow--subtitle">
+                Free warehousing
+              </div>
+              <div class="main-content__desc2--6--yellow--desc">
+                When you sell records or cassettes on Qrates, you can store your
+                products for free in one of our three worldwide distribution
+                centers (USA, UK, Japan).
+              </div>
+              <div class="main-content__desc2--6--yellow--subtitle">
+                Shipping
+              </div>
+              <div class="main-content__desc2--6--yellow--desc">
+                When a product is purchased from a customer, Qrates carefully
+                packages the product and ships it worldwide. We can also ship
+                products to any designated location.
+              </div>
+              <a
+                class="main-content__desc2--6--yellow--link"
+                href="https://qrates.com/"
+                >LEARN MORE</a
+              >
+              <img
+                class="main-content__desc2--6--yellow--img"
+                src="./assets/airplane.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="main-content__desc2--7 web">
+            <div class="main-content__desc2--7--grey">
+              <div class="main-content__desc2--7--grey--title">
+                Receive revenue
+              </div>
+              <div class="main-content__desc2--7--grey--desc">
+                Make a request to receive your revenue. We can deposit your
+                funds to your pre-registered bank account or Paypal account.
+              </div>
+              <img
+                class="main-content__desc2--7--grey--img"
+                src="./assets/dollarTapes.png"
+                alt=""
+              />
+            </div>
+            <div class="main-content__desc2--7--middle">
+              <div class="main-content__desc2--7--middle--circle">7</div>
+            </div>
+            <div class="main-content__desc2--7--yellow">
+              <div class="main-content__desc2--7--yellow--title">
+                Continue selling on Qrates
+              </div>
+              <div class="main-content__desc2--7--yellow--subtitle">
+                Selling on Qrates
+              </div>
+              <div class="main-content__desc2--7--yellow--desc">
+                By storing your inventory in the Qrates warehouse, you can
+                continue to sell your work on Qrates. You can manufacture the
+                exact number of copies as your project collected at the end of
+                the crowdfunding campaign, or you can make more copies and
+                continue to sell them on Qrates.
+              </div>
+              <div class="main-content__desc2--7--yellow--subtitle">
+                Repress
+              </div>
+              <div class="main-content__desc2--7--yellow--desc">
+                Repressing records is always easy. Master stampers can be stored
+                at the factory for 18 months at no charge, so there is no need
+                to make new stampers within that time frame. Use the repress
+                requests from fans as a signal on when to repress more records.
+              </div>
+              <a
+                class="main-content__desc2--7--yellow--link"
+                href="https://qrates.com/"
+                >LEARN MORE</a
+              >
+              <a
+                class="main-content__desc2--7--yellow--button"
+                href="https://qrates.com/how-it-works"
+                >HOW IT WORKS</a
+              >
+            </div>
+          </div>
+          <div class="main-content__desc2--0 w-990">
+            <div class="main-content__desc2--0--grey">
+              <div class="main-content__desc2--0--grey--label label">YOU</div>
+              <div class="main-content__desc2--0--grey--text">
+                <div class="main-content__desc2--0--grey--text--title">
+                  Focus on making music
+                </div>
+                <div class="main-content__desc2--0--grey--text--desc">
+                  You can focus on your music production with peace of mind: the
+                  Artist Toolkit has lots of information about music production,
+                  knowledge about vinyl records and cassettes, and tips on how
+                  to sell your music. Artist Toolkit
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-content__desc2--1 w-990">
+            <div class="main-content__desc2--1--grey">
+              <div class="main-content__desc2--1--grey--title">
+                Express your work on Qrates
+              </div>
+              <div class="main-content__desc2--1--grey--subtitle">
+                Qrates studio
+              </div>
+              <div class="main-content__desc2--1--grey--desc">
+                Your product details should match the details of your music.
+                Tweak and customize your vinyl, sleeve, jacket, and more.
+              </div>
+              <img
+                class="main-content__desc2--1--grey--img"
+                src="./assets/recordQrates.png"
+                alt=""
+              />
+            </div>
+            <div class="main-content__desc2--1--middle">
+              <div class="main-content__desc2--1--middle--circle">1</div>
+              <div class="main-content__desc2--1--middle--line"></div>
+              <div class="main-content__desc2--1--middle--arrowhead"></div>
+            </div>
+          </div>
+          <div class="main-content__desc2--2 w-990">
+            <div class="main-content__desc2--2--grey">
+              <div class="main-content__desc2--2--grey--title">
+                Start a Qrates page, confirm and pay for production costs.
+              </div>
+              <div class="main-content__desc2--2--grey--subtitle">
+                Pay up front? Crowdfunding?
+              </div>
+              <div class="main-content__desc2--2--grey--desc">
+                Pay for the production of your product in advance and start
+                production immediately, or choose the crowdfunding option and
+                press as many copies you like with pledges you collect from your
+                fans.
+              </div>
+              <div class="main-content__desc2--2--grey--subtitle">
+                Qrates page and Artist page
+              </div>
+              <div class="main-content__desc2--2--grey--desc">
+                The Qrates page is your storefront on Qrates to sell your music.
+                The Artist page is your profile page. Upload your images to the
+                template provided and fill in the form to set it up.
+              </div>
+            </div>
+            <div class="main-content__desc2--2--middle">
+              <div class="main-content__desc2--2--middle--circle">2</div>
+              <div class="main-content__desc2--2--middle--line"></div>
+              <div class="main-content__desc2--2--middle--arrowhead"></div>
+            </div>
+          </div>
+          <div class="main-content__desc2--yellowbg w-990">
             <div class="main-content__desc2--0">
-              <div class="main-content__desc2--0--grey">
-                <div class="main-content__desc2--0--grey--label">YOU</div>
-                <div class="main-content__desc2--0--grey--text">
-                  <div class="main-content__desc2--0--grey--text--title">Focus on making music
-                  </div>
-                  <div class="main-content__desc2--0--grey--text--desc">You can focus on your music production with peace of mind: the Artist Toolkit has lots of information about music production, knowledge about vinyl records and cassettes, and tips on how to sell your music. Artist Toolkit</div>
-                </div>
-              </div>
               <div class="main-content__desc2--0--yellow">
-                <div class="main-content__desc2--0--yellow--label">QRATES</div>
+                <div class="main-content__desc2--0--yellow--label label">
+                  QRATES
+                </div>
                 <div class="main-content__desc2--0--yellow--text">
-                  <div class="main-content__desc2--0--yellow--text--title">We'll take care of the hassle
+                  <div class="main-content__desc2--0--yellow--text--title">
+                    We'll take care of the hassle
                   </div>
-                  <div class="main-content__desc2--0--yellow--text--desc">Qrates supports a wide range of artists while eliminating the hassles, costs and risks associated with pressing records, giving artists more time and income back in their hands.
+                  <div class="main-content__desc2--0--yellow--text--desc">
+                    Qrates supports a wide range of artists while eliminating
+                    the hassles, costs and risks associated with pressing
+                    records, giving artists more time and income back in their
+                    hands.
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="main-content__desc2--1">
-              <div class="main-content__desc2--1--grey">
-                <div class="main-content__desc2--1--grey--title">Express your work on Qrates</div>
-                <div class="main-content__desc2--1--grey--subtitle">Qrates studio</div>
-                <div class="main-content__desc2--1--grey--desc">Your product details should match the details of your music. Tweak and customize your vinyl, sleeve, jacket, and more.</div>
-              </div>
-              <div class="main-content__desc2--1--middle">
-                <div class="main-content__desc2--1--middle--circle">1</div>
-                <div class="main-content__desc2--1--middle--line"></div>
-                <div class="main-content__desc2--1--middle--arrowhead"></div>
-              </div>
-              <div class="main-content__desc2--1--yellow">
-                <div class="main-content__desc2--1--grey--title">Over 120,000 customization possibilities
-                  <br>3D Visualizer</div>
-                <div class="main-content__desc2--1--grey--desc">Choose from vinyl or cassette, each with a wide range of options including colors, packaging, obi strips, download cards, etc. There are over 120,000 variations of colors and specs for vinyl and cassette that can be customized in the Qrates Studio.</div>
-                <img class="main-content__desc2--1--grey--img" src="./assets/recordQrates.png" alt="">
-              </div>
-            </div>
-            <div class="main-content__desc2--2">
-              <div class="main-content__desc2--2--grey">
-                <div class="main-content__desc2--2--grey--title">Start a Qrates page,</div>
-                <div class="main-content__desc2--2--grey--title">confirm and pay for production costs.<br>Pay up front? Crowdfunding?</div>
-                <div class="main-content__desc2--2--grey--desc">Pay for the production of your product in advance and start production immediately, or choose the crowdfunding option and press as many copies you like with pledges you collect from your fans.</div>
-                <div class="main-content__desc2--2--grey--subtitle">Qrates page and Artist page</div>
-                <div class="main-content__desc2--2--grey--desc">The Qrates page is your storefront on Qrates to sell your music. The Artist page is your profile page. Upload your images to the template provided and fill in the form to set it up.</div>
-                <img class="main-content__desc2--2--grey--img" src="./assets/managingRecord.png" alt="">
-              </div>
-              <div class="main-content__desc2--2--middle">
-                <div class="main-content__desc2--2--middle--circle">2</div>
-                <div class="main-content__desc2--2--middle--line"></div>
-                <div class="main-content__desc2--2--middle--arrowhead"></div>
-              </div>
-              <div class="main-content__desc2--2--yellow">
-                <div class="main-content__desc2--2--yellow--title">We support a wide range of artists' needs</div>
-                <div class="main-content__desc2--2--yellow--subtitle">Small production minimums</div>
-                <div class="main-content__desc2--2--yellow--desc">Vinyl records can be made from 100 copies, and cassette tapes from 50 copies.</div>
-                <div class="main-content__desc2--2--yellow--subtitle">Select the payment option</div>
-                <div class="main-content__desc2--2--yellow--desc">You can pay for the production of your product in advance and begin the production process immediately. We also have a pre-order function, which allows you to take orders during production until completion, and the crowdfunding method, which allows you to collect orders in advance and then begin the manufacturing process. If you don't want to pay for the production costs upfront, or if you want to collect orders from your fans before deciding on the final number of pieces to be produced, try crowdfunding. No risk, no waste.</div>
-                <div class="main-content__desc2--2--yellow--subtitle">Easily customizable your Qrates page and artist page</div>
-                <div class="main-content__desc2--2--yellow--desc">Qrates provides easy-to-setup templates for the Qrates page and the artist profile page. The Qrates page for selling your music can be set up to include audio samples, embedded videos, and comments from fans, making it a great promotional tool.</div>
-
               </div>
             </div>
             <div class="main-content__desc2--3">
-              <div class="main-content__desc2--3--grey">
-                <div class="main-content__desc2--3--grey--title">Collect orders from fans</div>
-                <div class="main-content__desc2--3--grey--desc">Share your Qrates page and collect orders from your fans. A variety of tools are also available to promote your music.</div>
-              </div>
               <div class="main-content__desc2--3--middle">
                 <div class="main-content__desc2--3--middle--circle">3</div>
                 <div class="main-content__desc2--3--middle--line"></div>
                 <div class="main-content__desc2--3--middle--arrowhead"></div>
               </div>
               <div class="main-content__desc2--3--yellow">
-                <div class="main-content__desc2--3--yellow--title">Wholesale distribution network</div>
-                <div class="main-content__desc2--3--yellow--subtitle">You can sell wholesale directly to record stores worldwide</div>
-                <div class="main-content__desc2--3--yellow--desc">Simply start selling on your Qrates page and receive orders from over 150 record stores and distributors worldwide that we partner with.</div>
-                <img class="main-content__desc2--3--yellow--img" src="./assets/logos.png" alt="">
+                <div class="main-content__desc2--3--yellow--title">
+                  Wholesale distribution network
+                </div>
+                <div class="main-content__desc2--3--yellow--subtitle">
+                  You can sell wholesale directly to record stores worldwide
+                </div>
+                <div class="main-content__desc2--3--yellow--desc">
+                  Simply start selling on your Qrates page and receive orders
+                  from over 150 record stores and distributors worldwide that we
+                  partner with.
+                </div>
+                <img
+                  class="main-content__desc2--3--yellow--img"
+                  src="./assets/logos.png"
+                  alt=""
+                />
               </div>
             </div>
             <div class="main-content__desc2--4">
-              <div class="main-content__desc2--4--grey">
-                <div class="main-content__desc2--4--grey--title">Upload your product assets and start production</div>
-                <div class="main-content__desc2--4--grey--desc">Prepare your audio and print files required for production.</div>
-              </div>
               <div class="main-content__desc2--4--middle">
                 <div class="main-content__desc2--4--middle--circle">4</div>
                 <div class="main-content__desc2--4--middle--line"></div>
                 <div class="main-content__desc2--4--middle--arrowhead"></div>
               </div>
               <div class="main-content__desc2--4--yellow">
-                <div class="main-content__desc2--4--yellow--title">Professional audio mastering and artwork support.</div>
-                <div class="main-content__desc2--4--yellow--subtitle">Audio mastering service</div>
-                <div class="main-content__desc2--4--yellow--desc">Qrates offers a audio mastering service with a partner professional audio engineer to support optimal sound creation.</div>
-                <div class="main-content__desc2--4--yellow--subtitle">Artwork support</div>
-                <div class="main-content__desc2--4--yellow--desc">We help ensure that your artwork conforms to printing standards and that your product is as beautiful as possible.</div>
+                <div class="main-content__desc2--4--yellow--title">
+                  Professional audio mastering and artwork support.
+                </div>
+                <div class="main-content__desc2--4--yellow--subtitle">
+                  Audio mastering service
+                </div>
+                <div class="main-content__desc2--4--yellow--desc">
+                  Qrates offers a audio mastering service with a partner
+                  professional audio engineer to support optimal sound creation.
+                </div>
+                <div class="main-content__desc2--4--yellow--subtitle">
+                  Artwork support
+                </div>
+                <div class="main-content__desc2--4--yellow--desc">
+                  We help ensure that your artwork conforms to printing
+                  standards and that your product is as beautiful as possible.
+                </div>
               </div>
             </div>
             <div class="main-content__desc2--5">
-              <div class="main-content__desc2--5--grey">
-                <img class="main-content__desc2--5--grey--img" src="./assets/standingRecord.png" alt="">
-              </div>
               <div class="main-content__desc2--5--middle">
                 <div class="main-content__desc2--5--middle--circle">5</div>
                 <div class="main-content__desc2--5--middle--line"></div>
                 <div class="main-content__desc2--5--middle--arrowhead"></div>
               </div>
               <div class="main-content__desc2--5--yellow">
-                <div class="main-content__desc2--5--yellow--title">Pressing records and making cassette tapes</div>
-                <div class="main-content__desc2--5--yellow--subtitle">Trusted production partners</div>
-                <div class="main-content__desc2--5--yellow--desc">We partner with factories that have a long history of manufacturing vinyl records and cassette tapes with proven technical capabilities and produce world-class quality products.</div>
-                <div class="main-content__desc2--5--yellow--subtitle">Speedy delivery time</div>
-                <div class="main-content__desc2--5--yellow--desc">Vinyl records are shipped from our factory within an average of 16 weeks after ordering. Cassette tapes can be shipped from the factory in an average of 8 weeks or less.</div>
-                <a class="main-content__desc2--5--yellow--link" href="https://qrates.com/">LEARN MORE</a>
+                <div class="main-content__desc2--5--yellow--title">
+                  Pressing records and making cassette tapes
+                </div>
+                <div class="main-content__desc2--5--yellow--subtitle">
+                  Trusted production partners
+                </div>
+                <div class="main-content__desc2--5--yellow--desc">
+                  We partner with factories that have a long history of
+                  manufacturing vinyl records and cassette tapes with proven
+                  technical capabilities and produce world-class quality
+                  products.
+                </div>
+                <div class="main-content__desc2--5--yellow--subtitle">
+                  Speedy delivery time
+                </div>
+                <div class="main-content__desc2--5--yellow--desc">
+                  Vinyl records are shipped from our factory within an average
+                  of 16 weeks after ordering. Cassette tapes can be shipped from
+                  the factory in an average of 8 weeks or less.
+                </div>
+                <a
+                  class="main-content__desc2--5--yellow--link"
+                  href="https://qrates.com/"
+                  >LEARN MORE</a
+                >
               </div>
             </div>
             <div class="main-content__desc2--6">
-              <div class="main-content__desc2--6--grey"></div>
               <div class="main-content__desc2--6--middle">
                 <div class="main-content__desc2--6--middle--circle">6</div>
                 <div class="main-content__desc2--6--middle--line"></div>
                 <div class="main-content__desc2--6--middle--arrowhead"></div>
               </div>
               <div class="main-content__desc2--6--yellow">
-                <div class="main-content__desc2--6--yellow--title">Warehousing and Distribution</div>
-                <div class="main-content__desc2--6--yellow--subtitle">Free warehousing</div>
-                <div class="main-content__desc2--6--yellow--desc">When you sell records or cassettes on Qrates, you can store your products for free in one of our three worldwide distribution centers (USA, UK, Japan).</div>
-                <div class="main-content__desc2--6--yellow--subtitle">Shipping</div>
-                <div class="main-content__desc2--6--yellow--desc">When a product is purchased from a customer, Qrates carefully packages the product and ships it worldwide. We can also ship products to any designated location.</div>
-                <a class="main-content__desc2--6--yellow--link" href="https://qrates.com/">LEARN MORE</a>
-                <img class="main-content__desc2--6--yellow--img" src="./assets/airplane.png" alt="">
+                <div class="main-content__desc2--6--yellow--title">
+                  Warehousing and Distribution
+                </div>
+                <div class="main-content__desc2--6--yellow--subtitle">
+                  Free warehousing
+                </div>
+                <div class="main-content__desc2--6--yellow--desc">
+                  When you sell records or cassettes on Qrates, you can store
+                  your products for free in one of our three worldwide
+                  distribution centers (USA, UK, Japan).
+                </div>
+                <div class="main-content__desc2--6--yellow--subtitle">
+                  Shipping
+                </div>
+                <div class="main-content__desc2--6--yellow--desc">
+                  When a product is purchased from a customer, Qrates carefully
+                  packages the product and ships it worldwide. We can also ship
+                  products to any designated location.
+                </div>
+                <a
+                  class="main-content__desc2--6--yellow--link"
+                  href="https://qrates.com/"
+                  >LEARN MORE</a
+                >
+                <img
+                  class="main-content__desc2--6--yellow--img"
+                  src="./assets/airplane.png"
+                  alt=""
+                />
               </div>
             </div>
             <div class="main-content__desc2--7">
-              <div class="main-content__desc2--7--grey">
-                <div class="main-content__desc2--7--grey--title">Receive revenue</div>
-                <div class="main-content__desc2--7--grey--desc">Make a request to receive your revenue. We can deposit your funds to your pre-registered bank account or Paypal account.</div>
-                <img class="main-content__desc2--7--grey--img" src="./assets/dollarTapes.png" alt="">
-              </div>
               <div class="main-content__desc2--7--middle">
                 <div class="main-content__desc2--7--middle--circle">7</div>
+                <div class="main-content__desc2--7--middle--line"></div>
+                <div class="main-content__desc2--7--middle--arrowhead"></div>
               </div>
               <div class="main-content__desc2--7--yellow">
-                <div class="main-content__desc2--7--yellow--title">Continue selling on Qrates</div>
-                <div class="main-content__desc2--7--yellow--subtitle">Selling on Qrates</div>
-                <div class="main-content__desc2--7--yellow--desc">By storing your inventory in the Qrates warehouse, you can continue to sell your work on Qrates. You can manufacture the exact number of copies as your project collected at the end of the crowdfunding campaign, or you can make more copies and continue to sell them on Qrates.</div>
-                <div class="main-content__desc2--7--yellow--subtitle">Repress</div>
-                <div class="main-content__desc2--7--yellow--desc">Repressing records is always easy. Master stampers can be stored at the factory for 18 months at no charge, so there is no need to make new stampers within that time frame. Use the repress requests from fans as a signal on when to repress more records.</div>
-                <a class="main-content__desc2--7--yellow--learn" href="https://qrates.com/">LEARN MORE</a>
-                <a class="main-content__desc2--7--yellow--button" href="https://qrates.com/how-it-works">HOW IT WORKS</a>
-              </div>
-            </div>
-            <div class="main-content__desc2--closing">
-              <div class="main-content__desc2--closing--banner">
-                <div class="main-content__desc2--closing--banner--text">Start a new project 
-                  <img src="./assets/arrow-right-thick.svg" alt="">
+                <div class="main-content__desc2--7--yellow--title">
+                  Continue selling on Qrates
                 </div>
-                <a class="main-content__desc2--closing--banner--button" href="https://qrates.com/projects/start">MAKE YOUR OWN</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="container main-content__desc3">
-            <div class="main-content__desc3--green">
-              <img src="./assets/synthesizer.png" alt="">
-              <div class="main-content__desc3--green--text">
-                <div></div>
-                <div class="main-content__desc3--green--text--label">ARTIST TOOLKIT</div>
-                <div></div>
-                <div class="main-content__desc3--green--text--title">Take you and your works to next level.</div>
-                <div></div>
-                <div class="main-content__desc3--green--text--desc">We have a lot of informations and tips about music production, physical format and music business for you.</div>
-                <div></div>
-                <a class="main-content__desc3--green--text--button" href="https://qrates.com/articles">LEARN MORE</a>
-                <div></div>
-              </div>
-            </div>
-            <div class="main-content__desc3--pink">
-              <img src="./assets/girlWithRecord.png" alt="">
-              <div class="main-content__desc3--pink--text">
-                <div></div>
-                <div class="main-content__desc3--pink--text--label">CUSTOMER SUPPORT</div>
-                <div></div>
-                <div class="main-content__desc3--pink--text--title">Here to help, whenever you need it.</div>
-                <div></div>
-                <div class="main-content__desc3--pink--text--desc">Whether you're an artist in the middle of product, or a fan with questions about your order; our team is here to help.</div>
-                <div></div>
-                <a class="main-content__desc3--pink--text--button" href="https://qrates.com/contact">CONTACT US</a>
-                <div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="container main-content__desc4">
-            <div class="main-content__desc4--label">COMMUNITY</div>
-            <div class="main-content__desc4--title">Join a growing community.</div>
-            <div class="main-content__desc4--desc">We're building a home for the next generation vinyl lovers and cassette junkies. Get in front of fans, connect with artists, labels and stores.</div>
-            <a class="main-content__desc4--button" href="https://qrates.com/stories">READ MORE STORIES</a>
-          </div>
-        </div>
-        <div class="section">
-          <div class="container main-content__desc5">
-            <div class="main-content__desc5--1">
-              <div class="main-content__desc5--1--left">
-                <div class="main-content__desc5--1--left--label">ARTISTS ON QRATES</div>
-                <div></div>
-                <div class="main-content__desc5--1--left--text">
-                  <div class="main-content__desc5--1--left--text--phrase">"The response was overwhelming. It made me wonder why I hadn't pressed any records on vinyl before now. It felt like something that people had been waiting for for a long time."</div>
-                  <div class="main-content__desc5--1--left--text--by">
-                    —<a class="main-content__desc5--1--left--text--by-text" href="https://qrates.com/artists/sol">SOL</a>
-                  </div>
+                <div class="main-content__desc2--7--yellow--subtitle">
+                  Selling on Qrates
                 </div>
-                <div></div>
-                <div class="main-content__desc5--1--left--button">
-                  <div class="main-content__desc5--1--left--button--1 btn1">1</div>
-                  <div class="main-content__desc5--1--left--button--2 btn2">2</div>
+                <div class="main-content__desc2--7--yellow--desc">
+                  By storing your inventory in the Qrates warehouse, you can
+                  continue to sell your work on Qrates. You can manufacture the
+                  exact number of copies as your project collected at the end of
+                  the crowdfunding campaign, or you can make more copies and
+                  continue to sell them on Qrates.
                 </div>
-              </div>
-              <div class="main-content__desc5--1--right">
-                <a class="main-content__desc5--1--right--img" href="https://qrates.com/artists/sol">
-                  <img src="./assets/humanWithRecord.jpg" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="main-content__desc5--2">
-              <div class="main-content__desc5--2--left">
-                <div class="main-content__desc5--2--left--label">ARTISTS ON QRATES</div>
-                <div></div>
-                <div class="main-content__desc5--2--left--text">
-                  <div class="main-content__desc5--2--left--text--phrase">“We hit our goal of 100 Records in the first 32 minutes. And I have to be honest, I didn't expect that. There's no world where I would have thought that we were about to sell north of 2800 copies.”</div>
-                  <div class="main-content__desc5--2--left--text--by">
-                    —Mason Lieberman (<a class="main-content__desc5--1--left--text--by-text" href="https://qrates.com/projects/20392-the-real-folk-blues">The Real Folk Blues, 2020</a>)
-                  </div>
+                <div class="main-content__desc2--7--yellow--subtitle">
+                  Repress
                 </div>
-                <div></div>
-                <div class="main-content__desc5--2--left--button">
-                  <div class="main-content__desc5--2--left--button--1 btn1">1</div>
-                  <div class="main-content__desc5--2--left--button--2 btn2">2</div>
+                <div class="main-content__desc2--7--yellow--desc">
+                  Repressing records is always easy. Master stampers can be
+                  stored at the factory for 18 months at no charge, so there is
+                  no need to make new stampers within that time frame. Use the
+                  repress requests from fans as a signal on when to repress more
+                  records.
                 </div>
-              </div>
-              <div class="main-content__desc5--2--right">
-                <a class="main-content__desc5--2--right--img" href="https://qrates.com/projects/20392-the-real-folk-blues">
-                  <img src="./assets/humanWithGuitar.jpg" alt="">
+                <a
+                  class="main-content__desc2--7--yellow--link"
+                  href="https://qrates.com/"
+                  >LEARN MORE
                 </a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="section">
-          <div class="container main-content__desc6">
-            <div class="main-content__desc6--container">
-              <div class="main-content__desc6--container--label">TRY IT NOW</div>
-              <div class="main-content__desc6--container--title">Make it real with Qrates Studio</div>
-              <div class="main-content__desc6--container--desc">Design the look and feel of your vinyl and cassette and use the profit calculator to immediately see how much your project will cost, and how much you'll earn.</div>
-              <div class="main-content__desc6--container--animation">
-                <div class="main-content__desc6--container--animation--1">
-                  <img class="main-content__desc6--container--animation--1--sparkle sparkle visible" src="./assets/sparkle_white.png" alt="">
-                  <img class="main-content__desc6--container--animation--1--1 animate-small" src="./assets/sample_all_india.png" alt="">
-                  <img class="main-content__desc6--container--animation--1--2 animate-small" src="./assets/sample_4dilla.png" alt="">
-                  <img class="main-content__desc6--container--animation--1--3 animate-small" src="./assets/sample_bombay.png" alt="">
-                  <img class="main-content__desc6--container--animation--1--4 animate-small" src="./assets/sample_blarney.png" alt="">
-                  <img class="main-content__desc6--container--animation--1--5 animate-small" src="./assets/sample_female.png" alt="">
-                  <img class="main-content__desc6--container--animation--1--6 animate-small" src="./assets/sample_black_country_disco.png" alt="">
-                </div>
-                <div class="main-content__desc6--container--animation--2">
-                  <img class="main-content__desc6--container--animation--2--dollar dollar" src="./assets/dollar.png" alt="">
-                  <img class="main-content__desc6--container--animation--2--1 animate-small" src="./assets/sample_all_india.png" alt="">
-                  <img class="main-content__desc6--container--animation--2--2 animate-small" src="./assets/sample_4dilla.png" alt="">
-                  <img class="main-content__desc6--container--animation--2--3 animate-small" src="./assets/sample_bombay.png" alt="">
-                  <img class="main-content__desc6--container--animation--2--4 animate-small" src="./assets/sample_blarney.png" alt="">
-                  <img class="main-content__desc6--container--animation--2--5 animate-small" src="./assets/sample_female.png" alt="">
-                  <img class="main-content__desc6--container--animation--2--6 animate-small" src="./assets/sample_black_country_disco.png" alt="">
-                </div>
+          <div class="main-content__desc2--8 w-990">
+            <div class="main-content__desc2--8--grey">
+              <div class="main-content__desc2--0--grey--label label">YOU</div>
+              <div class="main-content__desc2--8--grey--title">
+                Receive revenue
               </div>
-              <a class="main-content__desc6--container--button" href="https://qrates.com/projects/start">TRY IT NOW</a>
+              <div class="main-content__desc2--8--grey--desc">
+                Make a request to receive your revenue. We can deposit your
+                funds to your pre-registered bank account or Paypal account.
+              </div>
+              <img
+                class="main-content__desc2--8--grey--img"
+                src="./assets/dollarTapes.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="main-content__desc2--closing">
+            <div class="main-content__desc2--closing--banner">
+              <div class="main-content__desc2--closing--banner--text">
+                Start a new project
+                <img src="./assets/arrow-right-thick.svg" alt="" />
+              </div>
+              <a
+                class="main-content__desc2--closing--banner--button"
+                href="https://qrates.com/projects/start"
+                >MAKE YOUR OWN</a
+              >
             </div>
           </div>
         </div>
-      </main>
-      <footer id="footer">
-        <div class="section">
-          <div class="container footer-content">
-            <div class="footer-content__pages">
-              <div class="footer-content__pages--1">
-                <div class="footer-content__pages--1--title">FOR ARTISTS</div>
-                <div class="footer-content__pages--1--links">
-                  <a class="footer-content__pages--1--links--1" href="https://qrates.com/for-artists">For Artists</a>
-                  <a class="footer-content__pages--1--links--2" href="https://qrates.com/how-it-works">How it Works</a>
-                  <a class="footer-content__pages--1--links--3" href="https://qrates.com/articles">Artist Toolkit</a>
-                  <a class="footer-content__pages--1--links--4" href="https://share.qrates.com/">Referral Program</a>
-                </div>
-              </div>
-              <div class="footer-content__pages--2">
-                <div class="footer-content__pages--2--title">FOR FANS</div>
-                <div class="footer-content__pages--2--links">
-                  <a class="footer-content__pages--2--links--1" href="https://qrates.com/for-fans">For Fans</a>
-                  <a class="footer-content__pages--2--links--2" href="https://qrates.com/projects?product_format=vinyl">Records</a>
-                  <a class="footer-content__pages--2--links--3" href="https://qrates.com/projects?product_format=cassette">Cassettes</a>
-                  <a class="footer-content__pages--2--links--4" href="https://qrates.com/stories">Stories</a>
-                  <a class="footer-content__pages--2--links--5" href="https://qrates.com/curated">Qrates Curated</a>
-                </div>
-              </div>
-              <div class="footer-content__pages--3">
-                <div class="footer-content__pages--3--title">OUR COMPANY</div>
-                <div class="footer-content__pages--3--links">
-                  <a class="footer-content__pages--3--links--1" href="https://qrates.com/about">About Qrates</a>
-                  <a class="footer-content__pages--3--links--2" href="https://qrates.com/careers">Careers</a>
-                  <a class="footer-content__pages--3--links--3" href="https://qrates.com/partners">Partners</a>
-                </div>
-              </div>
-              <div class="footer-content__pages--4">
-                <div class="footer-content__pages--4--title">HELP</div>
-                <div class="footer-content__pages--4--links">
-                  <a class="footer-content__pages--4--links--1" href="https://support.qrates.com/">Support Center</a>
-                  <a class="footer-content__pages--4--links--2" href="https://qrates.com/contact">Contact Us</a>
-                  <a class="footer-content__pages--4--links--3" href="https://support.qrates.com/article/ty2pmtraxf-cancellation-refund-and-replacement-policy">Returns</a>
-                  <a class="footer-content__pages--4--links--4" href="https://support.qrates.com/category/LvxH57l654-shopping-guide">Shipping</a>
-                </div>
-              </div>
-            </div>
-            <div class="footer-content__bottom">
-              <div class="footer-content__bottom--left">
-                <a class="footer-content__bottom--left--logo" href="https://qrates.com/"><img src="./assets/qrates-logo-footer.svg" alt=""></a>
+      </div>
+      <div class="section">
+        <div class="container main-content__desc3">
+          <div class="main-content__desc3--green">
+            <img src="./assets/synthesizer.png" alt="" />
+            <div class="main-content__desc3--green--text">
+              <div></div>
+              <div class="main-content__desc3--green--text--label label">
+                ARTIST TOOLKIT
               </div>
               <div></div>
-              <div class="footer-content__bottom--right">
-                <div class="footer-content__bottom--right--language">
-                  <div class="footer-content__bottom--right--language--selected">
-                    <div>English</div>
-                    <div></div>
-                    <img class="footer-content__bottom--right--language--selected--arrow" src="./assets/nav-arrow-down-white.svg" alt="arrow">
-                  </div>
-                  <div id="lang-items" class="footer-content__bottom--right--language--unselected">日本語</div>
-                </div>
-                <div class="footer-content__bottom--right--logos">
-                  <div></div>
-                  <a href="" class="footer-content__bottom--right--logos--facebook">
-                    <img src="./assets/facebook.svg" alt="">
-                  </a>
-                  <a href="" class="footer-content__bottom--right--logos--instagram">
-                    <img src="./assets/instagram.svg" alt="">
-                  </a>
-                  <a href="" class="footer-content__bottom--right--logos--twitter">
-                    <img src="./assets/twitter.svg" alt="">
-                  </a>
-                </div>
-                <div class="footer-content__bottom--right--legal">
-                  <div class="footer-content__bottom--right--legal--left">
-                    <a class="footer-content__bottom--right--legal--left--1" href="https://qrates.com/terms">Terms of Service</a>
-                    <a class="footer-content__bottom--right--legal--left--2" href="https://qrates.com/privacy">Privacy Policy</a>
-                    <a class="footer-content__bottom--right--legal--left--3" href="https://qrates.com/legal">Legal Information</a>
-                  </div>
-                  <div class="footer-content__bottom--right--legal--right">© TDMS Inc.</div>
-                </div>
+              <div class="main-content__desc3--green--text--title">
+                Take you and your works to next level.
               </div>
-            </div>            
+              <div></div>
+              <div class="main-content__desc3--green--text--desc">
+                We have a lot of informations and tips about music production,
+                physical format and music business for you.
+              </div>
+              <div></div>
+              <a
+                class="main-content__desc3--green--text--button"
+                href="https://qrates.com/articles"
+                >LEARN MORE</a
+              >
+              <div></div>
+            </div>
+          </div>
+          <div class="main-content__desc3--pink">
+            <img src="./assets/girlWithRecord.png" alt="" />
+            <div class="main-content__desc3--pink--text">
+              <div></div>
+              <div class="main-content__desc3--pink--text--label label">
+                CUSTOMER SUPPORT
+              </div>
+              <div></div>
+              <div class="main-content__desc3--pink--text--title">
+                Here to help, whenever you need it.
+              </div>
+              <div></div>
+              <div class="main-content__desc3--pink--text--desc">
+                Whether you're an artist in the middle of product, or a fan with
+                questions about your order; our team is here to help.
+              </div>
+              <div></div>
+              <a
+                class="main-content__desc3--pink--text--button"
+                href="https://qrates.com/contact"
+                >CONTACT US</a
+              >
+              <div></div>
+            </div>
           </div>
         </div>
-      </footer>
+      </div>
+      <div class="section">
+        <div class="container main-content__desc4">
+          <div class="main-content__desc4--label label">COMMUNITY</div>
+          <div class="main-content__desc4--title">
+            Join a growing community.
+          </div>
+          <div class="main-content__desc4--desc">
+            We're building a home for the next generation vinyl lovers and
+            cassette junkies. Get in front of fans, connect with artists, labels
+            and stores.
+          </div>
+          <a
+            class="main-content__desc4--button"
+            href="https://qrates.com/stories"
+            >READ MORE STORIES</a
+          >
+        </div>
+      </div>
+      <div class="section">
+        <div class="container main-content__desc5">
+          <div class="main-content__desc5--1">
+            <div class="main-content__desc5--1--left">
+              <div class="main-content__desc5--1--left--label label">
+                ARTISTS ON QRATES
+              </div>
+              <div></div>
+              <div class="main-content__desc5--1--left--text">
+                <div class="main-content__desc5--1--left--text--phrase">
+                  "The response was overwhelming. It made me wonder why I hadn't
+                  pressed any records on vinyl before now. It felt like
+                  something that people had been waiting for for a long time."
+                </div>
+                <div class="main-content__desc5--1--left--text--by">
+                  —<a
+                    class="main-content__desc5--1--left--text--by-text"
+                    href="https://qrates.com/artists/sol"
+                    >SOL</a
+                  >
+                </div>
+              </div>
+              <div></div>
+              <div class="main-content__desc5--1--left--button">
+                <div class="main-content__desc5--1--left--button--1 btn1">
+                  1
+                </div>
+                <div class="main-content__desc5--1--left--button--2 btn2">
+                  2
+                </div>
+              </div>
+            </div>
+            <div class="main-content__desc5--1--right">
+              <a
+                class="main-content__desc5--1--right--img"
+                href="https://qrates.com/artists/sol"
+              >
+                <img src="./assets/humanWithRecord.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="main-content__desc5--2">
+            <div class="main-content__desc5--2--left">
+              <div class="main-content__desc5--2--left--label label">
+                ARTISTS ON QRATES
+              </div>
+              <div></div>
+              <div class="main-content__desc5--2--left--text">
+                <div class="main-content__desc5--2--left--text--phrase">
+                  “We hit our goal of 100 Records in the first 32 minutes. And I
+                  have to be honest, I didn't expect that. There's no world
+                  where I would have thought that we were about to sell north of
+                  2800 copies.”
+                </div>
+                <div class="main-content__desc5--2--left--text--by">
+                  —Mason Lieberman (<a
+                    class="main-content__desc5--1--left--text--by-text"
+                    href="https://qrates.com/projects/20392-the-real-folk-blues"
+                    >The Real Folk Blues, 2020</a
+                  >)
+                </div>
+              </div>
+              <div></div>
+              <div class="main-content__desc5--2--left--button">
+                <div class="main-content__desc5--2--left--button--1 btn1">
+                  1
+                </div>
+                <div class="main-content__desc5--2--left--button--2 btn2">
+                  2
+                </div>
+              </div>
+            </div>
+            <div class="main-content__desc5--2--right">
+              <a
+                class="main-content__desc5--2--right--img"
+                href="https://qrates.com/projects/20392-the-real-folk-blues"
+              >
+                <img src="./assets/humanWithGuitar.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container main-content__desc6">
+          <div class="main-content__desc6--container">
+            <div class="main-content__desc6--container--label label">
+              TRY IT NOW
+            </div>
+            <div class="main-content__desc6--container--title">
+              Make it real with Qrates Studio
+            </div>
+            <div class="main-content__desc6--container--desc">
+              Design the look and feel of your vinyl and cassette and use the
+              profit calculator to immediately see how much your project will
+              cost, and how much you'll earn.
+            </div>
+            <div class="main-content__desc6--container--animation">
+              <div class="main-content__desc6--container--animation--1">
+                <img
+                  class="main-content__desc6--container--animation--1--sparkle sparkle visible"
+                  src="./assets/sparkle_white.png"
+                  alt=""
+                />
+                <img
+                  class="main-content__desc6--container--animation--1--1 animate-small"
+                  src="./assets/sample_all_india.png"
+                  alt=""
+                />
+                <img
+                  class="main-content__desc6--container--animation--1--2 animate-small"
+                  src="./assets/sample_4dilla.png"
+                  alt=""
+                />
+                <img
+                  class="main-content__desc6--container--animation--1--3 animate-small"
+                  src="./assets/sample_bombay.png"
+                  alt=""
+                />
+                <img
+                  class="main-content__desc6--container--animation--1--4 animate-small"
+                  src="./assets/sample_blarney.png"
+                  alt=""
+                />
+                <img
+                  class="main-content__desc6--container--animation--1--5 animate-small"
+                  src="./assets/sample_female.png"
+                  alt=""
+                />
+                <img
+                  class="main-content__desc6--container--animation--1--6 animate-small"
+                  src="./assets/sample_black_country_disco.png"
+                  alt=""
+                />
+              </div>
+              <div class="main-content__desc6--container--animation--2">
+                <img
+                  class="main-content__desc6--container--animation--2--dollar dollar"
+                  src="./assets/dollar.png"
+                  alt=""
+                />
+                <img
+                  class="main-content__desc6--container--animation--2--1 animate-small"
+                  src="./assets/sample_all_india.png"
+                  alt=""
+                />
+                <img
+                  class="main-content__desc6--container--animation--2--2 animate-small"
+                  src="./assets/sample_4dilla.png"
+                  alt=""
+                />
+                <img
+                  class="main-content__desc6--container--animation--2--3 animate-small"
+                  src="./assets/sample_bombay.png"
+                  alt=""
+                />
+                <img
+                  class="main-content__desc6--container--animation--2--4 animate-small"
+                  src="./assets/sample_blarney.png"
+                  alt=""
+                />
+                <img
+                  class="main-content__desc6--container--animation--2--5 animate-small"
+                  src="./assets/sample_female.png"
+                  alt=""
+                />
+                <img
+                  class="main-content__desc6--container--animation--2--6 animate-small"
+                  src="./assets/sample_black_country_disco.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <a
+              class="main-content__desc6--container--button"
+              href="https://qrates.com/projects/start"
+              >TRY IT NOW</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="section">
+        <div class="container footer-content">
+          <div class="footer-content__pages">
+            <div class="footer-content__pages--1">
+              <div class="footer-content__pages--1--title">FOR ARTISTS</div>
+              <div class="footer-content__pages--1--links">
+                <a
+                  class="footer-content__pages--1--links--1"
+                  href="https://qrates.com/for-artists"
+                  >For Artists</a
+                >
+                <a
+                  class="footer-content__pages--1--links--2"
+                  href="https://qrates.com/how-it-works"
+                  >How it Works</a
+                >
+                <a
+                  class="footer-content__pages--1--links--3"
+                  href="https://qrates.com/articles"
+                  >Artist Toolkit</a
+                >
+                <a
+                  class="footer-content__pages--1--links--4"
+                  href="https://share.qrates.com/"
+                  >Referral Program</a
+                >
+              </div>
+            </div>
+            <div class="footer-content__pages--2">
+              <div class="footer-content__pages--2--title">FOR FANS</div>
+              <div class="footer-content__pages--2--links">
+                <a
+                  class="footer-content__pages--2--links--1"
+                  href="https://qrates.com/for-fans"
+                  >For Fans</a
+                >
+                <a
+                  class="footer-content__pages--2--links--2"
+                  href="https://qrates.com/projects?product_format=vinyl"
+                  >Records</a
+                >
+                <a
+                  class="footer-content__pages--2--links--3"
+                  href="https://qrates.com/projects?product_format=cassette"
+                  >Cassettes</a
+                >
+                <a
+                  class="footer-content__pages--2--links--4"
+                  href="https://qrates.com/stories"
+                  >Stories</a
+                >
+                <a
+                  class="footer-content__pages--2--links--5"
+                  href="https://qrates.com/curated"
+                  >Qrates Curated</a
+                >
+              </div>
+            </div>
+            <div class="footer-content__pages--3">
+              <div class="footer-content__pages--3--title">OUR COMPANY</div>
+              <div class="footer-content__pages--3--links">
+                <a
+                  class="footer-content__pages--3--links--1"
+                  href="https://qrates.com/about"
+                  >About Qrates</a
+                >
+                <a
+                  class="footer-content__pages--3--links--2"
+                  href="https://qrates.com/careers"
+                  >Careers</a
+                >
+                <a
+                  class="footer-content__pages--3--links--3"
+                  href="https://qrates.com/partners"
+                  >Partners</a
+                >
+              </div>
+            </div>
+            <div class="footer-content__pages--4">
+              <div class="footer-content__pages--4--title">HELP</div>
+              <div class="footer-content__pages--4--links">
+                <a
+                  class="footer-content__pages--4--links--1"
+                  href="https://support.qrates.com/"
+                  >Support Center</a
+                >
+                <a
+                  class="footer-content__pages--4--links--2"
+                  href="https://qrates.com/contact"
+                  >Contact Us</a
+                >
+                <a
+                  class="footer-content__pages--4--links--3"
+                  href="https://support.qrates.com/article/ty2pmtraxf-cancellation-refund-and-replacement-policy"
+                  >Returns</a
+                >
+                <a
+                  class="footer-content__pages--4--links--4"
+                  href="https://support.qrates.com/category/LvxH57l654-shopping-guide"
+                  >Shipping</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer-content__bottom web">
+            <div class="footer-content__bottom--left">
+              <a
+                class="footer-content__bottom--left--logo"
+                href="https://qrates.com/"
+                ><img src="./assets/qrates-logo-footer.svg" alt=""
+              /></a>
+            </div>
+            <div></div>
+            <div class="footer-content__bottom--right">
+              <div class="footer-content__bottom--right--language">
+                <div class="footer-content__bottom--right--language--selected">
+                  <div>English</div>
+                  <div></div>
+                  <img
+                    class="footer-content__bottom--right--language--selected--arrow"
+                    src="./assets/nav-arrow-down-white.svg"
+                    alt="arrow"
+                  />
+                </div>
+                <div
+                  id="lang-items"
+                  class="footer-content__bottom--right--language--unselected"
+                >
+                  日本語
+                </div>
+              </div>
+              <div class="footer-content__bottom--right--logos">
+                <div></div>
+                <a
+                  href=""
+                  class="footer-content__bottom--right--logos--facebook"
+                >
+                  <img src="./assets/facebook.svg" alt="" />
+                </a>
+                <a
+                  href=""
+                  class="footer-content__bottom--right--logos--instagram"
+                >
+                  <img src="./assets/instagram.svg" alt="" />
+                </a>
+                <a
+                  href=""
+                  class="footer-content__bottom--right--logos--twitter"
+                >
+                  <img src="./assets/twitter.svg" alt="" />
+                </a>
+              </div>
+              <div class="footer-content__bottom--right--legal">
+                <div class="footer-content__bottom--right--legal--left">
+                  <a
+                    class="footer-content__bottom--right--legal--left--1"
+                    href="https://qrates.com/terms"
+                    >Terms of Service</a
+                  >
+                  <a
+                    class="footer-content__bottom--right--legal--left--2"
+                    href="https://qrates.com/privacy"
+                    >Privacy Policy</a
+                  >
+                  <a
+                    class="footer-content__bottom--right--legal--left--3"
+                    href="https://qrates.com/legal"
+                    >Legal Information</a
+                  >
+                </div>
+                <div class="footer-content__bottom--right--legal--right">
+                  © TDMS Inc.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-content__bottom w-990">
+            <div class="footer-content__bottom--right--logos">
+              <a href="" class="footer-content__bottom--right--logos--facebook">
+                <img src="./assets/facebook.svg" alt="" />
+              </a>
+              <a
+                href=""
+                class="footer-content__bottom--right--logos--instagram"
+              >
+                <img src="./assets/instagram.svg" alt="" />
+              </a>
+              <a href="" class="footer-content__bottom--right--logos--twitter">
+                <img src="./assets/twitter.svg" alt="" />
+              </a>
+            </div>
+            <a
+              class="footer-content__bottom--left--logo"
+              href="https://qrates.com/"
+              ><img src="./assets/qrates-logo-footer.svg" alt=""
+            /></a>
+            <div></div>
+            <div class="footer-content__bottom--right">
+              <div class="footer-content__bottom--right--language">
+                <div class="footer-content__bottom--right--language--selected1">
+                  <div>English</div>
+                  <div></div>
+                  <img
+                    class="footer-content__bottom--right--language--selected--arrow1"
+                    src="./assets/nav-arrow-down-white.svg"
+                    alt="arrow"
+                  />
+                </div>
+                <div
+                  id="lang-items1"
+                  class="footer-content__bottom--right--language--unselected1"
+                >
+                  日本語
+                </div>
+              </div>
+              <div class="footer-content__bottom--right--legal">
+                <div class="footer-content__bottom--right--legal--left">
+                  <a
+                    class="footer-content__bottom--right--legal--left--1"
+                    href="https://qrates.com/terms"
+                    >Terms of Service</a
+                  >
+                  <a
+                    class="footer-content__bottom--right--legal--left--2"
+                    href="https://qrates.com/privacy"
+                    >Privacy Policy</a
+                  >
+                  <a
+                    class="footer-content__bottom--right--legal--left--3"
+                    href="https://qrates.com/legal"
+                    >Legal Information</a
+                  >
+                </div>
+                <div class="footer-content__bottom--right--legal--right">
+                  © TDMS Inc.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
