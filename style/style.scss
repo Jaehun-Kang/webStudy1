@@ -1756,10 +1756,78 @@ footer {
   }
 
   .main-content {
+    &__intro {
+      &--text {
+        &--title {
+          font-size: 2.75rem;
+          line-height: 2.75rem;
+        }
+
+        &--desc {
+          font-size: 1.375rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+
+    &__desc2 {
+      &--phrase {
+        font-size: 2.75rem;
+        line-height: 2.75rem;
+      }
+
+      &--closing {
+        &--banner {
+          &--button {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+
+    &__desc3 {
+      &--green,
+      &--pink {
+        &--text {
+          &--button {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+
+    &__desc4 {
+      &--button {
+        font-size: 0.75rem;
+      }
+    }
+
     &__desc6 {
       &--container {
+        padding-block: 2.5rem 3.125rem;
+        padding-inline: 0.9375rem;
+
+        &--desc {
+          width: 100%;
+        }
+
         &--button {
+          font-size: 0.75rem;
           width: auto;
+        }
+
+        &--animation {
+          .sparkle {
+            right: 5%;
+            bottom: -15%;
+            width: 15%;
+          }
+
+          .dollar {
+            width: 15%;
+            top: -30%;
+            left: -3%;
+          }
         }
       }
     }

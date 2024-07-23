@@ -1458,8 +1458,47 @@ footer {
     color: #000;
     opacity: 0.25;
   }
+  .main-content__intro--text--title {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+  .main-content__intro--text--desc {
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+  }
+  .main-content__desc2--phrase {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+  .main-content__desc2--closing--banner--button {
+    font-size: 0.75rem;
+  }
+  .main-content__desc3--green--text--button, .main-content__desc3--pink--text--button {
+    font-size: 0.75rem;
+  }
+  .main-content__desc4--button {
+    font-size: 0.75rem;
+  }
+  .main-content__desc6--container {
+    padding-block: 2.5rem 3.125rem;
+    padding-inline: 0.9375rem;
+  }
+  .main-content__desc6--container--desc {
+    width: 100%;
+  }
   .main-content__desc6--container--button {
+    font-size: 0.75rem;
     width: auto;
+  }
+  .main-content__desc6--container--animation .sparkle {
+    right: 5%;
+    bottom: -15%;
+    width: 15%;
+  }
+  .main-content__desc6--container--animation .dollar {
+    width: 15%;
+    top: -30%;
+    left: -3%;
   }
   .footer-content__bottom--right--language {
     width: 100%;
