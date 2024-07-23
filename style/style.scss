@@ -236,6 +236,7 @@ footer {
       display: grid;
       grid-template-columns: min-content min-content min-content min-content min-content min-content min-content min-content;
       column-gap: 7px;
+      overflow-x: auto;
 
       &--category {
         cursor: pointer;
@@ -300,6 +301,7 @@ footer {
           color: #fff;
           display: none;
           position: absolute;
+          z-index: 3;
 
           > * {
             margin-top: 16px;
@@ -1719,5 +1721,61 @@ footer {
 
   .label {
     font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .close-button {
+    font-size: 40px;
+  }
+
+  .search-tab {
+    &__search-bar {
+      .mglass {
+        > img {
+          width: 24px;
+        }
+      }
+    }
+
+    .search-input {
+      font-size: 1.375rem;
+      margin-left: 34px;
+      margin-bottom: 10px;
+      height: 30px;
+
+      &::placeholder {
+        font-family: 'Qratesis-medium', 'Noto Sans KR', sans-serif;
+        font-weight: 500;
+        font-size: 1.375rem;
+        -webkit-text-stroke: 0px;
+        color: #000;
+        opacity: 0.25;
+      }
+    }
+  }
+
+  .main-content {
+    &__desc6 {
+      &--container {
+        &--button {
+          width: auto;
+        }
+      }
+    }
+  }
+
+  .footer-content {
+    &__bottom {
+      &--right {
+        &--language {
+          width: 100%;
+          &--selected1,
+          &--unselected1 {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }

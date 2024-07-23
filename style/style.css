@@ -226,6 +226,7 @@ footer {
   grid-template-columns: min-content min-content min-content min-content min-content min-content min-content min-content;
   -moz-column-gap: 7px;
        column-gap: 7px;
+  overflow-x: auto;
 }
 .search-tab__popular--categories--category {
   cursor: pointer;
@@ -283,6 +284,7 @@ footer {
   color: #fff;
   display: none;
   position: absolute;
+  z-index: 3;
 }
 .nav__left-content--pages--discover-music--items > * {
   margin-top: 16px;
@@ -1425,5 +1427,44 @@ footer {
   }
   .label {
     font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .close-button {
+    font-size: 40px;
+  }
+  .search-tab__search-bar .mglass > img {
+    width: 24px;
+  }
+  .search-tab .search-input {
+    font-size: 1.375rem;
+    margin-left: 34px;
+    margin-bottom: 10px;
+    height: 30px;
+  }
+  .search-tab .search-input::-moz-placeholder {
+    font-family: "Qratesis-medium", "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: 1.375rem;
+    -webkit-text-stroke: 0px;
+    color: #000;
+    opacity: 0.25;
+  }
+  .search-tab .search-input::placeholder {
+    font-family: "Qratesis-medium", "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: 1.375rem;
+    -webkit-text-stroke: 0px;
+    color: #000;
+    opacity: 0.25;
+  }
+  .main-content__desc6--container--button {
+    width: auto;
+  }
+  .footer-content__bottom--right--language {
+    width: 100%;
+  }
+  .footer-content__bottom--right--language--selected1, .footer-content__bottom--right--language--unselected1 {
+    width: 100%;
   }
 }
